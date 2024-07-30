@@ -5,7 +5,6 @@ DROP TABLE IF EXISTS category;
 DROP TABLE IF EXISTS subcategory;
 DROP TABLE IF EXISTS contacts;
 
-
 CREATE TABLE "category" (
     "category_id" VARCHAR(10)   NOT NULL,
     "category" VARCHAR(255)   NOT NULL,
@@ -41,10 +40,10 @@ CREATE TABLE "campaign" (
     "pledged" REAL   NOT NULL,
     "outcome" VARCHAR(255)   NOT NULL,
     "backers_count" INT   NOT NULL,
-    "country" VARCHAR(10)   NOT NULL,
-    "currency" VARCHAR(10)   NOT NULL,
-    "launched_date" VARCHAR(255)   NOT NULL,
-    "end_date" VARCHAR(255)   NOT NULL,
+    "country" VARCHAR(2)   NOT NULL,
+    "currency" VARCHAR(3)   NOT NULL,
+    "launched_date" DATE   NOT NULL,
+    "end_date" DATE   NOT NULL,
     "category_id" VARCHAR(10)   NOT NULL,
     "subcategory_id" VARCHAR(10)   NOT NULL,
     CONSTRAINT "pk_campaign" PRIMARY KEY (
@@ -60,4 +59,3 @@ REFERENCES "category" ("category_id");
 
 ALTER TABLE "campaign" ADD CONSTRAINT "fk_campaign_subcategory_id" FOREIGN KEY("subcategory_id")
 REFERENCES "subcategory" ("subcategory_id");
-
