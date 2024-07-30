@@ -43,6 +43,7 @@ Four queries were created to verify that each table has the correct data.
 3. **[Data Analysis](https://github.com/blmccourt/Crowdfunding_ETL/tree/main/Data%20Analysis)**
    - [`crowdfunding_queries.sql`](https://github.com/blmccourt/Crowdfunding_ETL/blob/main/Data%20Analysis/crowdfunding_queries.sql) is the file with all queries.
    - [`select_all_campaign.png`](https://github.com/blmccourt/Crowdfunding_ETL/blob/main/Data%20Analysis/select_all_campaign.png) is the image file showing the results from the SELECT * query in pgAdmin.
+   - [`select_all_campaign_all_columns.png`](https://github.com/blmccourt/Crowdfunding_ETL/blob/main/Data%20Analysis/select_all_campaign_all_columns.png) is an additional image file showing all the columns created for the campaign table.
    - [`select_all_category.png`](https://github.com/blmccourt/Crowdfunding_ETL/blob/main/Data%20Analysis/select_all_category.png) is the image file showing the results from the SELECT * query in pgAdmin.
    - [`select_all_contacts.png`](https://github.com/blmccourt/Crowdfunding_ETL/blob/main/Data%20Analysis/select_all_contacts.png) is the image file showing the results from the SELECT * query in pgAdmin.
    - [`select_all_subcategory.png`](https://github.com/blmccourt/Crowdfunding_ETL/blob/main/Data%20Analysis/select_all_subcategory.png) is the image file showing the results from the SELECT * query in pgAdmin.
